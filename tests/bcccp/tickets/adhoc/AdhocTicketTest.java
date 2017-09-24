@@ -138,7 +138,7 @@ public class AdhocTicketTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        AdhocTicket instance = null;
+        AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
         String expResult = "";
         String result = instance.toString();
         assertEquals(expResult, result);
