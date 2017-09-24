@@ -46,7 +46,7 @@ public class AdhocTicketTest {
         AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
         String expResult = "Ticket0001";
         String result = instance.getBarcode();
-        assertEquals(expResult, result);;
+        assertEquals(expResult, result);
     }
 
     /**
@@ -68,20 +68,9 @@ public class AdhocTicketTest {
     public void testGetTicketNo() {
         System.out.println("getTicketNo");
         AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
-        int expResult = 0;
+        int expResult = 1;
         int result = instance.getTicketNo();
         assertEquals(expResult, result);
-    }
-
-    /**
-     * Test of enter method, of class AdhocTicket.
-     */
-    @Test
-    public void testEnter() {
-        System.out.println("enter");
-        long entryDateTime = 0L;
-        AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
-        instance.enter(entryDateTime);
     }
 
     /**
@@ -141,9 +130,7 @@ public class AdhocTicketTest {
         AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
         String expResult = "";
         String result = instance.toString();
-        assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertNotEquals(expResult, result);
     }
 
     /**
@@ -168,8 +155,6 @@ public class AdhocTicketTest {
         boolean expResult = false;
         boolean result = instance.isPaid();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -190,12 +175,10 @@ public class AdhocTicketTest {
     @Test
     public void testHasExited() {
         System.out.println("hasExited");
-        AdhocTicket instance = null;
+        AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
         boolean expResult = false;
         boolean result = instance.hasExited();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
