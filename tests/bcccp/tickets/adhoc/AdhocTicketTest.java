@@ -80,7 +80,7 @@ public class AdhocTicketTest {
     public void testEnter() {
         System.out.println("enter");
         long entryDateTime = 0L;
-        AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");;
+        AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
         instance.enter(entryDateTime);
     }
 
