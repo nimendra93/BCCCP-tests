@@ -164,7 +164,7 @@ public class AdhocTicketTest {
     @Test
     public void testIsPaid() {
         System.out.println("isPaid");
-        AdhocTicket instance = null;
+        AdhocTicket instance = new AdhocTicket("CARP00001", 1, "Ticket0001");
         boolean expResult = false;
         boolean result = instance.isPaid();
         assertEquals(expResult, result);
