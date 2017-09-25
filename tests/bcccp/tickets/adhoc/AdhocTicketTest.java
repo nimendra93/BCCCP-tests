@@ -14,7 +14,7 @@ import static org.junit.Assert.*;
 
 /**
  *
- * @author sithira
+ * @author nimendra
  */
 public class AdhocTicketTest {
     
